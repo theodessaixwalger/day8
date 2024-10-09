@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+
+li {
+  position: relative;
+}
+
+li img {
+  width: 100%;
+  height: 100%;
+}
+
+.splide__slide.is-active img {
+  opacity: 1;
+  transform: scale(1.5);
+  z-index: 2;
+}
+
+.splide__slide.is-prev img,
+.splide__slide.is-next img {
+  opacity: 0.5;
+  transform: scale(0.5);
+  z-index: 1;
+}
